@@ -1,0 +1,30 @@
+#1. Creating and Renaming Files/Directories
+  cd /home/bob
+  mkdir test_dir
+  cd test_dir
+  touch example.txt
+  mv example.txt renamed_example.txt
+
+#2. Viewing File Contents
+cat /etc/passwd
+head -5 /etc/passwd
+tail -5 /etc/passwd
+
+#3.Searching for Patterns
+cat /etc/passwd | grep -n root
+
+#4. Zipping and Unzipping
+cd /home
+zip -s test_dir test_dir
+unzip -s test_dir.zip unzipped_dir
+
+#5. Downloading Files
+cd /home/test_dir
+wget https://example.com/sample.txt
+
+#6. Changing Permissions
+cd /home/test_dir
+chmod 444 sample.txt
+sudo chmod 444 sample.txt
+
+#7. Working with Environment Variables
