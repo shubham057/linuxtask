@@ -14,17 +14,19 @@ tail -5 /etc/passwd
 cat /etc/passwd | grep -n root
 
 #4. Zipping and Unzipping
-cd /home
+cd /home/bob/
 zip -s test_dir test_dir
 unzip -s test_dir.zip unzipped_dir
 
 #5. Downloading Files
-cd /home/test_dir
+cd /home/bob/test_dir
 wget https://example.com/sample.txt
 
 #6. Changing Permissions
-cd /home/test_dir
-chmod 444 sample.txt
-sudo chmod 444 sample.txt
+cd /home/bob/test_dir
+chmod 444 secure.txt
+sudo chmod 444 secure.txt
 
 #7. Working with Environment Variables
+export MY_VAR="Hello, Linux!"
+echo $MY_VAR
